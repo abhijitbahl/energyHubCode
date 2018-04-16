@@ -10,7 +10,7 @@ public class CartesianProduct {
 
 	public CartesianProduct(String inputString) throws InvalidInputString {
 		// logs the message and throws an exception , need to rerun the project
-		if(inputString ==null){
+		if (inputString == null) {
 			logger.severe("empty string");
 			System.exit(6);
 		}
@@ -37,14 +37,14 @@ public class CartesianProduct {
 		return i == 0;
 	}
 
-	// returns the output of the bash cartesian product 
+	// returns the output of the bash cartesian product
 	public String getCartesianProduct() {
 		StringBuilder sb = new StringBuilder();
 		for (String i : getStrings()) {
 			sb.append(i).append(" ");
 		}
 		logger.info("successfully determined the bash cartesian product");
-		return sb.toString().trim();//removes extra space at the end
+		return sb.toString().trim();// removes extra space at the end
 	}
 
 	// Separates the strings based on braces
