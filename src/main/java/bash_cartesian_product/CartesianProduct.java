@@ -20,7 +20,7 @@ public class CartesianProduct {
 		}
 		this.inputString = "{" + inputString + "}";
 	}
-//
+
 	// method to check for valid parenthesis
 	public boolean validString(String input) {
 		int i = 0;
